@@ -1,8 +1,9 @@
 var MinerGame = MinerGame || {};
-MinerGame.bootState = function () {
+MinerGame.preloadState = function () {
 
 };
-MinerGame.bootState.prototype = {
+
+MinerGame.preloadState.prototype = {
     preload: function () {
 
     },
