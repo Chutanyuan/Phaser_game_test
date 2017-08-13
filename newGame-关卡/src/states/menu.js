@@ -51,13 +51,13 @@ MinerGame.menuState.prototype = {
            this.starting = true;
             music.stop();
             var startSound = this.add.audio('start_game');
-            startSound.volume -= .6;
+            startSound.volume -= 0.6;
             startSound.play();
             // menu text fade in and out for 1.5 sec
             var startTween = this.game.add.tween(this.startText).to({ alpha: 0 }, 100, "Linear", true, 0, -1, true);
             // after 1.5 sec, transition to next state
             this.game.time.events.add(700, function() {
-                this.game.camera.fade(0x000000, 250);
+                this.game.camera.fade(0xffffff, 250);
                 MinerGame.currentTrack = null;
                 MinerGame.newLevel = true;
                 MinerGame.hardModeTime = 0;
